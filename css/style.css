@@ -3,4 +3,8 @@
        #map {
                     height: 180px;
                 }
-          
+  
+                <style>
+    .leaflet-popup-content p {
+      margin: 0.2em 0;
+    }

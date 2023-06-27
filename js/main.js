@@ -78,7 +78,10 @@ function pointToLayer(feature, latlng) {
   // Build popup content string
   var popupContent = "<p><b>State:</b> " + feature.properties.State + "</p>";
   popupContent += "<p><b>Gini Index 2019:</b> " + feature.properties[attribute] + "</p>";
-  layer.bindPopup(popupContent);
+  layer.bindPopup(popupContent, {
+    offset: new L.Point(0, -radius)
+  });
+
 
   return layer;
 }
